@@ -1,4 +1,3 @@
-
 i = 0
 while i < 3:
 	password = input('please enter your password: ')
@@ -8,6 +7,8 @@ while i < 3:
 		break
 	else : 
 		i = i + 1
-		print('password is wrong, you still have',3-i,'oppportunites')
-		
+		if 3-i !=0:
+			print('password is wrong, you still have',3-i,'oppportunites')
+		else:
+			print('your account is blocked')
 		
